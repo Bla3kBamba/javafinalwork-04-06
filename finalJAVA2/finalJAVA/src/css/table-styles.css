@@ -1,0 +1,35 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+}
+
+.shifts-table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.shifts-table th, 
+.shifts-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.shifts-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.shifts-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

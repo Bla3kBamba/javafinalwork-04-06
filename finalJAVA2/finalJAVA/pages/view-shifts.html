@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>צפייה במשמרות</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav__item {
+            margin-right: 15px;
+        }
+
+        .nav__link {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav__link:hover {
+            text-decoration: underline;
+        }
+
+        .nav-brand img {
+            width: 100px;
+            height: auto;
+        }
+
+        main {
+            padding: 20px 0;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #shifts-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #shifts-table th, #shifts-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #shifts-table th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        #shifts-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #shifts-table tbody tr:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <a href="/" class="nav-brand">
+                <img src="../src/images/logo.png" alt="Logo">
+            </a>
+            <ul class="nav-menu without-auth">
+                <li class="nav__item">
+                    <a href="login.html" class="nav__link">התחברות</a>
+                </li>
+                <li class="nav__item">
+                    <a href="regpage.html" class="nav__link">הרשמה</a>
+                </li>
+                <li class="nav__item">
+                    <a href="help.html" class="nav__link">צור קשר</a>
+                </li>
+            </ul>
+            <ul class="nav-menu with-auth">
+                <li class="nav__item">
+                    <a href="profile.html" class="nav__link">שלום <span id="user-name"></span></a>
+                </li>
+                <li class="nav__item">
+                    <a href="help.html" class="nav__link">צור קשר</a>
+                </li>
+                <li class="nav__item">
+                    <span class="nav__link" id="logoutBtn">התנתקות</span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>צפייה במשמרות</h2>
+    <div id="table-container">
+        <table id="shifts-table">
+            <thead>
+            <tr>
+                <th>שעת התחלה</th>
+                <th>שעת סיום</th>
+                <th>שכר שעתי</th>
+                <th>תפקיד</th>
+                <th>מיקום</th>
+                <th>תאריך משמרת</th>
+                <th>מחיקה</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- משמרות יוצגו כאן -->
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<script type="module" src="../src/js/view-shifts.js"></script>
+</body>
+</html>

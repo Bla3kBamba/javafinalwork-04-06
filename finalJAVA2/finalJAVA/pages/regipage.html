@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Register page</title>
+  </head>
+  <body>
+    <main class="auth-page">
+      <div class="box">
+        <h2>Sign Up</h2>
+        <form method="post" action="">
+          <div class="auth-group">
+            <div class="input-div">
+              <label for="first-name">First Name:</label>
+              <input
+                type="text"
+                id="first-name"
+                required
+                placeholder="First Name"
+              />
+            </div>
+            <div class="input-div">
+              <label for="last-name">Last Name:</label>
+              <input
+                type="text"
+                id="last-name"
+                required
+                placeholder="Last Name"
+              />
+            </div>
+          </div>
+          <div class="input-div">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required placeholder="Username" />
+          </div>
+          <div class="input-div">
+            <label for="age">Age:</label>
+            <input
+              type="number"
+              min="18"
+              max="68"
+              id="age"
+              required
+              placeholder="Age"
+            />
+          </div>
+          <div class="input-div">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="input-div">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              required
+              id="password"
+              placeholder="password"
+            />
+          </div>
+          <button class="auth-btn" type="submit" id="submitBtn">Submit</button>
+        </form>
+        <p class="form-tips">
+          Already have an account? <a href="./login.html">Login</a>
+        </p>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="../src/js/register.js"></script>
+</html>
